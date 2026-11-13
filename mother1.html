@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/mother1.css">
+    <link rel="stylesheet" href="style/general.css">
+    <title>Mother 1 (NES)</title>
+</head>
+<body id="body">
+    <main>
+        <nav>
+            <div class="nav-content">
+                <div class="option-container"><a class="link" href="index.html"><img class="nav-img" src="assets/Mother_(1989)_logo_small.png" alt="Mother"></a></div>
+                <div style="display: flex;">
+                    <div class="option-container">
+                        <a style="margin-right: 20px;" class="link" href="mother2.html">
+                            <img class="nav-img" src="assets/EarthBound_logo.png" alt="Mother 2 (SNES)">
+                        </a>
+                    </div>
+                    <div class="option-container">
+                        <a class="link" href="mother3.html">
+                            <img class="nav-img" src="assets/Mother_3_Final_Logo.png" alt="Mother 3 (GBA)">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="mode-container">
+            <div>
+                <input class="mode-button" type="button" value="Day" id="day-button" hidden onclick="dayMode()">
+                <input class="mode-button" type="button" value="Night" id="night-button" onclick="nightMode()">
+                <input class="mode-button" type="button" value="Abyss" id="abyss-button" onclick="abyssMode()">
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>
+                <img class="title-img" src="assets/EarthBound_Beginnings_Logo.png" alt="Earthbound Begginnings">
+            </h1>
+            <div>
+                <div class="blurb-container">
+                    <p class="blurb-text">O ano, 1988; a cidade, Podunk.</p>
+                    <p class="blurb-text">Como Ninten, um jovem garoto com poderes psíquicos, você deve localizar as oito melodias para ajudar a Rainha de Magicant. Armado com seu confiável taco de baseball, você irá enfrentar hippies, zumbis...e o ocasional Caracol Mágico? Descubra o que está causando esse fenômeno tão estranho!</p>
+                    <p class="blurb-text">Mas tem robôs em todo lugar, e Ninten não consegue vencê-los sozinho. Você terá que se juntar com um grupo diverso de personagens inexperados—incluindo Lloyd, Ana e Teddy–para vencer batalhas intensas com ataques psíquicos. PK Fire! PK Thunder! PK Freeze! Parece familiar? Bem, Ninten não é o unico com poderes psíquicos — sua companheira Ana também usa ataques PSI para ajudar em batalhas.</p>
+                    <p class="blurb-text">Mas esse é só o começo de seus épicos team-ups. Na jornada de Ninten entre Magicant a a Terra, você juntará forças com o Homens Voadores também! Divirta-se explorando um zoológico abandonado, salvando o mundo e mais!</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div name="ninten" class="character-container">
+                    <div><h2 class="flavonids ninten-color">THIS IS YOU!</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th colspan="2">NINTEN</th>
+                            </tr>
+                            <tr>
+                                <td>IDADE:</td>
+                                <td>12 anos</td>
+                            </tr>
+                            <tr>
+                                <td>ALTURA:</td>
+                                <td>152cm</td>
+                            </tr>
+                            <tr>
+                                <td>PESO:</td>
+                                <td>42kg</td>
+                            </tr>
+                            <tr>
+                                <td>TIPO SANGUÍNEO:</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>COR DO CABELO:</td>
+                                <td>Preto</td>
+                            </tr>
+                            <tr>
+                                <td>DEFESA NO BASEBALL:</td>
+                                <td>RIGHT FIELDING</td>
+                            </tr>
+                        </table>
+                        <div name="img" class="sprite-container">
+                            <img src="assets/ninten_front_sprite.png" alt="Sprite of Ninten">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem sou eu?</p>
+                            <ul>
+                                <li>Ninten é um garoto energético com um espírito aventureiro, comparando-o com Indiana Jones</li>
+                                <li>Seu cachorro, Mick, é muito chegado(close) a ele, especialmente durante seus anos como bebê</li>
+                                <li>Na escola, ele foi escolhido como "Sr. Líder" pelos seus colegas de classe e é bem popular</li>
+                                <li>Ninten também rotineiramente joga baseball com uma forte paixão, sendo um "team regular"(?) no time de baseball masculino</li>
+                                <li>Mantido segredo da sua mãe, ele gosta de tocar a guitarra que seu pai deu para ele, especialmente quando acompanhado por Mick</li>
+                                <li>Sua comida favorita é Prime rib(?), que sua mãe faz para o jantar uma vez na semana</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-pain">
+                        <div class="width-fit">
+                            <header class="ninten-header">
+                                <h2 class="header-text">MY FAVORITE THINGS</h2>
+                            </header>
+                            <section class="thing-section">
+        
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Boné de baseball</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text" style="text-align: justify;">Boné dado como presente pelo seu pai, ele só tira seu boné quando toma banho ou quando ele faz uma batida poderosa quando joga baseball ou quando ele vai dormir.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                            <div>
+                                                <h3>Tiquetes para o Tokyo Giants</h3>
+                                            </div>
+                                            <div>
+                                                <p class="thing-text">Tiquetes trazidos pelo pai de Ninten depois de uma viagem para o Japão. Ninten acredita que esse time é "irmão" do San Francisco Giants, que é seu favorito.</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div>
+                                        <div class="thing-description">
+                                            <div>
+                                                <h3>Foto da bisavó</h3>
+                                            </div>
+                                            <div>
+                                                <p class="thing-text">A foto descolorida de borda eliptica da sua bisavó é mantida na sua mesa e é algo que ele realmente aprecia, mas metade da foto foi rasgada</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="thing-description">
+                                            <div>
+                                                <h3>Bola de baseball assinada por Shigeo Nagashima</h3>
+                                            </div>
+                                            <div>
+                                                <p class="thing-text">Ninten recebeu a bola de baseball de Nagashima quando eles estavam sentados lado a lado assistindo um jogo da "big leagues". Ninten reconheceu Nagashima de uma entrevista numa revista de baseball que ele tinha lido.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Colher dobrada</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">A colher dobrou quando ele brincava durante o jantar, quando ele já estva chei depois de comer na barraquinha de cachorro-quente, e como resultado foi incapaz de se conter, e dobrou a colher por meios desconhecidos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Penguim de brinquedo</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">O animal favorito do Ninten são penguins, por isso seu penguim de brinquedo é uma das suas posses mais queridas. Quando penguins foram introduzidos no zoológico local, isso fez uma grande "impressão" nele, já que ele só tinha visto eles na TV.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div name="roid" class="character-container">
+                    <div><h2 class="flavonids roid-color">YOUR DEAR FRIEND</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr><th colspan="2">LLOYD</th></tr>
+                            <tr>
+                                <td>IDADE:</td>
+                                <td>11 anos</td>
+                            </tr>
+                            <tr>
+                                <td>ALTURA:</td>
+                                <td>149cm</td>
+                            </tr>
+                            <tr>
+                                <td>PESO:</td>
+                                <td>40kg</td>
+                            </tr>
+                            <tr>
+                                <td>TIPO SANGUÍNEO:</td>
+                                <td>AB</td>
+                            </tr>
+                            <tr>
+                                <td>COR DO CABELO:</td>
+                                <td>Cinza</td>
+                            </tr>
+                        </table>
+                        <div name="img" class="sprite-container">
+                            <img src="assets/roid_front_sprite.png" alt="Sprite of Lloyd">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem é ele?</p>
+                            <ul>
+                                <li>Esteriótipo de uma pessoa nerd, é tímido e inteligente</li>
+                                <li>Frequentemente sofre bullying de vários de seus colegas, como resultado ele é geralmente encontrado se escondendo em latas de lixo enquanto está na escola.</li>
+                                <li>Quando era mais novo, ele já mostrava comportamento introvertido, não deixando outros além de sua mãe mostrar afeição por ele.</li>
+                                <li>Lloyd já gostava do seu ídolo, Albert Einstein, desde cedo</li>
+                                <li>Ele gosta muito de ciência, principalmente mecânica, já que ele é capaz de ativar foguetes industriais e navegar tanques militares.</li>
+                            </ul>
+                        </div>       
+                    </div>
+                    <div class="container-pain">
+                        <div class="width-fit">
+                            <header class="roid-header">
+                                <h2 class="header-text">HIS FAVORITE THINGS</h2>
+                            </header>
+                            <section class="thing-section">
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Livro sobre teoria da relatividade</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text" style="text-align: justify;">Lloyd encontrou o livro na estante de seu pai aos três anos e isso acendeu seu interesse por Albert Einstein durante os próximos anos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                            <div>
+                                                <h3>Software para PC</h3>
+                                            </div>
+                                            <div>
+                                                <p class="thing-text">Ele usa seu PC principalmente para jogar videogames e às vezes ele pode mostrar comportamento agressivo ao perder um jogo ou quando o jogo mal-funciona.</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Boneco do Superman</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Um dos poucos itens que não são relacionados a ciência, é indicado que ele consegue se identificar no personagem, já que ele tem dois lados: uma pessoa comum e um herói.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Kit de ferramentas de brinquedo</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">As ferramentas servem mais como um memento(?) do que para construir dispositivos, visto que esse é o primeiro kit que ele recebeu, que foi comprado pela mãe dele.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Trófeu da "Pan-American Concentration Convention: Boy's Division Championship"</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Ele ganhou o troféu na convenção depois de demonstrar uma capacidade de memória impressionante, apesar de que apenas a base sobrou do troféu, as he  pois ele usou todo o cobre do troféu em vários experimentos.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Óculos</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Ele raramente os tira, só quando está sozinho.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+        
+                </div>
+                <hr>
+                <div name="anna" class="character-container">
+                    <div><h2 class="flavonids anna-color">YOUR FRIEND OF MIND</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr><th colspan="2">ANNA</th></tr>
+                            <tr>
+                                <td>IDADE:</td>
+                                <td>12 anos</td>
+                            </tr>
+                            <tr>
+                                <td>ALTURA:</td>
+                                <td>143cm</td>
+                            </tr>
+                            <tr>
+                                <td>PESO:</td>
+                                <td>36kg</td>
+                            </tr>
+                            <tr>
+                                <td>TIPO SANGUÍNEO:</td>
+                                <td>B</td>
+                            </tr>
+                            <tr>
+                                <td>COR DO CABELO:</td>
+                                <td>Loiro</td>
+                            </tr>
+                        </table>
+                        <div name="img" class="sprite-container">
+                            <img src="assets/anna_front_sprite.png" alt="Sprite of Anna">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem é ela?</p>
+                            <ul>
+                                <li>Indivíduo gentil e simpático, até o ponto onde ele é considerada o orgulho de Snowman pelos moradores da cidade.</li>
+                                <li>Nascida no dia 23 de Dezembro, ela tem, portanto, Capricôrnio como seu signo do zodiáco</li>
+                                <li>Gosta de tocar piano e orgão, pratica regularmente músicas de Mozart, as quais ela acha relaxante</li>
+                                <li>Els é frequentemente chamada de "Little Mother" pelas crianças mais novas da cidade, devido a sua personalidade e suas notas altas na escola.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-pain">
+                        <div class="width-fit">
+                            <header class="anna-header">
+                                <h2 class="header-text">HER FAVORITE THINGS</h2>
+                            </header>
+                            <section class="thing-section">
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Piano</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text" style="text-align: justify;">Ela é habilidosa tocando piano e considera a melodia como outra forma de escrita. Durante uma ocasião, quando o professor dela tinha passado tarefa de casa, Ana pergontou ao professor se ela poderia fazer a tarefa no piano, deixando o professor confuso.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Bíblia</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Ela recebeu a Bíblia ainda bebê, e ainda que ela não entendesse as palavras escritas, ela podia sentir a pureza que elas continham. O livro se tornou ainda mais valioso para ela quando ela aprendeu que havia uma dedicatória que dizia:"Para nossa pequena Ana", na última página.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Fita(Ribbon)</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Sua fita é alqo com que ela normalmente prende o cabelo, apesar de ela usar ocasionalmente um chápeu durante excursões especiais.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Coleção de selos</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">A coleção de selos consiste de selos usados dados a ela pelos seus colegas de classe na sunday school, os quais ela guarda em uma lata circular de doce e isso ajuda ela no seu trabalhovoluntário(volunteering)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Coleção de envelopes</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">A coleção de envelopes é entretanto algo que ela tem para ela mesma; ela manda mandar cartas, e devido a sua meticulosidade (finickity) acerca da escolha de envelope, o tempo gasto escrevendo a carta é quase menor do que o tempo gasto escolhendo um envelope.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3 id="thing-title">Cópia LP do album de 1981 "Tadaima" de Akiko Yano </h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Essa cópia de Tadaima foi dado como presente para ela do sua amiga por correspondência, Yoshie, que mora no Japão. Ele geralmente escuta o álbum ao chegar em casa da escola, mesmo que ela não entenda japonês.</p>
+                                            <label for="thing-title">LP(Long Play) é um tipo de disco de vinil com 12 ou 10 polegadas de diâmetro que roda a 33*1/2 rpm.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                <div name="teddy" class="character-container">
+                    <div><h2 class="flavonids teddy-color">YOUR BIG FRIEND</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr><th colspan="2">TEDDY</th></tr>
+                            <tr>
+                                <td>IDADE:</td>
+                                <td>(?)</td>
+                            </tr>
+                            <tr>
+                                <td><span>ALTURA:</span></td>
+                                <td>188cm</td>
+                            </tr>
+                            <tr>
+                                <td><span>PESO:</span></td>
+                                <td>78kg</td>
+                            </tr>
+                            <tr>
+                                <td>TIPO SANGUÍNEO:</td>
+                                <td>(?)</td>
+                            </tr>
+                            <tr>
+                                <td>COR DO CABELO:</td>
+                                <td>Preto</td>
+                            </tr>
+                        </table>
+                        <div name="img" class="sprite-container">
+                            <img src="assets/teddy_sprite_front.png" alt="Sprite of Teddy">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem é Teddy?</p>
+                            <ul>
+                                <li>Ele demonstra comportamento violento, já aos cinco anos ele gostava de lutar, e frequentemente fuma</li>
+                                <li>Dizem que ele era mais tranquilo antes da morte dos pais</li>
+                                <li>Ele gosta de cantar, tocar violão e ecutar shows de light rockabilly na Live House</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container-pain">
+                        <div class="width-fit">
+                            <header class="teddy-header">
+                                <h2 style="margin: 0px; text-align: center;">TEDDY'S FAVORITE THINGS</h2>
+                            </header>
+                            <section class="thing-section">
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Violão</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text" style="text-align: justify;">Às vezes ele toca seu violão enquanto no quarto, onde ele quietamente cantarola(hums) uma balada(?)(ballad) junto a música do violão</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Cigarros</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Desde criança seu comportamento era semelhante ao de um adulto, e ele frequentemente carregava um pacote de cigarros de chocolate.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Óculos de sol</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Acredita-se que ele conseguiu esses óculos quando estava em uma loja procurando por um par, quando ele descobriu que a loja não vendia óculos de sol, ele socou os dentes da frente do dono para fora, que por obrigação pegou um par e o chamou de "Teddy Glass", depois o dono vendeu para ele.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Jaqueta de couro</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Ele prefere não vestir a jaqueta de couro, dizem que seja por que ele não gosta de passar tempo com os membros da sua gangue; a jaqueta, entretanto, serve como uma memória de seu pai, depois que ele faleceu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Livro sobre E. Yazawa</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">A autobiografia por Eikichi Yazawa, um músico japonês, foi enviada a ele por um membro da sua gangue, Koyano. Ainda que ele não entenda Japonês, ele consegue sentir a mensagem escrita.</p>
+                                        </div>
+                                    </div>
+                                    <div class="thing-description">
+                                        <div>
+                                            <h3>Pet Iguana</h3>
+                                        </div>
+                                        <div>
+                                            <p class="thing-text">Ele recebeu o pet iguana de um dos criminoso grupo rival, a gangue dos Jet Lizard, depois de uma luta onda a gangue Bla-Bla ganhou. Os Jet Lizard juraram aliança a Teddy depois do incidente, e lhe deram a iguana como prova; apesar de não gostar do animal, Teddy acabou criando e tomando conta da iguana.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/modes.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/mother2.css">
+    <link rel="stylesheet" href="style/general.css">
+    <title>Mother 2 (SNES)</title>
+</head>
+<body id="body">
+    <main>
+        <nav>
+            <div class="nav-content">
+                <div class="option-container">
+                    <a class="link" href="index.html"><img class="nav-img" src="assets/Mother_(1989)_logo_small.png" alt="Mother"></a>
+                </div>
+                <div style="display: flex;">
+                    <div class="option-container">
+                        <a style="margin-right: 20px;" class="link" href="mother1.html"><img class="nav-img" src="assets/EarthBound_Beginnings_Logo.png" alt="Mother 1 (NES)"></a>
+                    </div>
+                    <div class="option-container">
+                        <a class="link" href="mother3.html"><img class="nav-img" src="assets/Mother_3_Final_Logo.png" alt="Mother 3 (GBA)"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <input type="button" value="Day" id="day-button" hidden onclick="dayMode()">
+            <input type="button" value="Night" id="night-button" onclick="nightMode()">
+            <input type="button" value="Abyss" id="abyss-button" onclick="abyssMode()">
+        </div>
+        <div class="main-content">
+            <h1>
+                <img class="title-img" src="assets/EarthBound_logo.png" alt="Earthbound">
+            </h1>
+            <div>
+                <div class="blurb-container">
+                    <p class="blurb-text">Giygas invade!! Aliens bizarros andam pela Terra!! </p>
+                    <p class="blurb-text">Terror intergalático atinge a pequena cidade de Onett, quando um objeto extraterrestre pegando fogo(blazing) colide à noite! Agora a Terra enfrenta destruição iminente pelo mal conhecido como Giygas!</p>
+                    <p class="blurb-text">Armado com um taco de baseball rachado, um cookie e um cartão de crédito, um corajoso rapaz chamado Ness jura salvar o planeta da destruição absoluta. Ele deve primeiro encontrar seus companheiros heróicos, Paula, Jeff e Poo, ao longo do caminho para oito locais misteriosos chamados de "Your Sanctuary" para ganhar poder e colocar um fim à ameaça interestelar. Os cidadões de Onett dão o seu apoio por meio de gadgets altamente tecnológicos, máquinas do tempo robóticas e estórias excêntricas sobre a vida.</p>
+                    <p class="blurb-text">Aliens a espreita e fenômenos inexplicaveis estão sendo reportados no interior. Nossos quatro prodígios (wonderkids) se juntam com inovação, poderes psíquicos e armas engenhosas. Será que Ness conseguirá derrotar os inúmeros monstros assustadores na sua jornada? O teste final será o encontro inevitável com o todo-poderoso Giygas!</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div name="ness" class="character-container">
+                    <div><h2 class="flavonids ninten-color">THIS IS YOU!</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th rowspan="6"><img src="assets/ness_sprite.png" alt="Sprite of Ness"></th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>He is described as being brave and courageous, as well as kind and helpful</td>
+                            </tr>
+                            <tr>
+                                <td>Ness appears to have an interest in baseball due to his primary choice of weapons being baseball bats and his baseball cap having his favorite team logo on it</td>
+                            </tr>
+                            <tr>
+                                <td>Ness's favorite food is steak, it's implied that his family has steak often because of him</td>
+                            </tr>
+                            <tr>
+                                <td>Ness is implied to be close to his home and his family, as implied by how he starts feeling homesick if he is away from home for long</td>
+                            </tr>
+                            <tr>
+                                <td>the only way to cure his homesickness is talking to his mother,</td>
+                            </tr>
+                        </table>
+                        <!--<div name="img" class="sprite-container">
+                            <img src="assets/ness_sprite.png" alt="Sprite of Ness">
+                        </div>
+                        <div class="description-container">
+                            <p>O que eu sou?</p>
+                            <ul>
+                                <li>He is described as being brave and courageous, as well as kind and helpful</li>
+                                <li>Ness appears to have an interest in baseball due to his primary choice of weapons being baseball bats and his baseball cap having his favorite team logo on it</li>
+                                <li>Ness's favorite food is steak, it's implied that his family has steak often because of him</li>
+                                <li>Ness is implied to be close to his home and his family, as implied by how he starts feeling homesick if he is away from home for long</li>
+                                <li>the only way to cure his homesickness is talking to his mother,</li>
+                                <li>Sua comida favorita é Prime rib(?), que sua mãe faz para o jantar uma vez na semana</li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+                <p><a href="https://wikibound.info/wiki/Ninten">Ninten Description</a></p>
+                <hr>
+
+                <div name="paula" class="character-container">
+                    <div><h2 style="color: rgb(255, 57, 146);" class="flavonids">YOUR FRIEND OF MIND</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th rowspan="4">
+                                    <img src="assets/paula_sprite.png" alt="Sprite of Anna">
+                                </th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>Paula is a very kind and helpful young girl.</td>
+                            </tr>
+                            <tr>
+                                <td>The children at Polestar Preschool look up to her as a motherly figure.</td>
+                            </tr>
+                            <tr>
+                                <td>Paula appears to have an interest in Teddy bears, as she has one in the cell with her when she is imprisoned by Carpainter, and she also has a Teddy bear in her room at her house, inside a present.</td>
+                            </tr>
+                        </table>
+                        <!--<div name="img" class="sprite-container">
+                            <img src="assets/paula_sprite.png" alt="Sprite of Anna">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem é ela?</p>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+                <hr>
+
+                <div name="jeff" class="character-container">
+                    <div><h2 style="color:rgb(0, 223, 137)" class="flavonids">YOUR DEAR FRIEND</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th rowspan="4">
+                                    <img src="assets/jeff_sprite.png" alt="Sprite of Jeff">
+                                </th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>Jeff's personality is shown as being shy, clumsy and reckless, and he also admitted he is nearsighted</td>
+                            </tr>
+                            <tr>
+                                <td>He is, however, a very smart individual, reflected by his high IQ stat</td>
+                            </tr>
+                            <tr>
+                                <td>He is able to repair broken items into weapons or other useful goods throughout the night</td>
+                            </tr>
+                        </table>
+                        <!--<div name="img" class="sprite-container">
+                            <img src="assets/jeff_sprite.png" alt="Sprite of Jeff">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem é ele?</p>
+                            <ul>
+                                <li>Jeff's personality is shown as being shy, clumsy and reckless, and he also admitted he is nearsighted</li>
+                                <li>He is, however, a very smart individual, reflected by his high IQ stat</li>
+                                <li>He is able to repair broken items into weapons or other useful goods throughout the night</li>
+                            </ul>
+                        </div>-->       
+                    </div>
+        
+                </div>
+                <hr>
+
+                <div name="poo" class="character-container">
+                    <div><h2 style="color:rgb(176, 14, 197)" class="flavonids">YOUR BIG FRIEND</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th rowspan="4"><img src="assets/poo_sprite3.png" alt="Sprite of Teddy"></th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>Poo is very friendly with the people in his kingdom, appearing to be especially popular with the women of Dalaam</td>
+                            </tr>
+                            <tr>
+                                <td>Poo is also a serious and dedicated individual, appearing to take his training very seriously, as some women mention he'd rather train than hang out with them</td>
+                            </tr>
+                            <tr>
+                                <td>Poo also shows strong loyalty, saying he will follow Ness and obey him as his master</td>
+                            </tr>
+                        </table>
+                        <!--<div name="img" class="sprite-container">
+                            <img src="assets/poo_sprite3.png" alt="Sprite of Teddy">
+                        </div>
+                        <div class="description-container">
+                            <p>Quem é Poo?</p>
+                            <ul>
+                                <li>Poo is very friendly with the people in his kingdom, appearing to be especially popular with the women of Dalaam</li>
+                                <li>Poo is also a serious and dedicated individual, appearing to take his training very seriously, as some women mention he'd rather train than hang out with them</li>
+                                <li>Poo also shows strong loyalty, saying he will follow Ness and obey him as his master,</li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/modes.js"></script>
+</body>
+</html>

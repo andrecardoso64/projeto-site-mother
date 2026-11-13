@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/mother3.css">
+    <link rel="stylesheet" href="style/general.css">
+    <title>Mother 3 (GBA)</title>
+</head>
+<body id="body">
+    <main>
+        <nav>
+            <div class="nav-content">
+                <div><a class="link" href="index.html"><img class="nav-img" src="assets/Mother_(1989)_logo_small.png" alt="Mother"></a></div>
+                <div style="display: flex;">
+                    <div><a style="margin-right: 20px;" class="link" href="mother1.html"><img class="nav-img" src="assets/EarthBound_Beginnings_Logo.png" alt="Mother 1 (NES)"></a></div>
+                    <div><a class="link" href="mother2.html"><img class="nav-img" src="assets/EarthBound_logo.png" alt="Mother 2 (SNES)"></a></div>
+                </div>
+            </div>
+        </nav>
+        <div class="mode-container">
+            <input class="mode-button" type="button" value="Day" id="day-button" hidden onclick="dayMode()">
+            <input class="mode-button" type="button" value="Night" id="night-button" onclick="nightMode()">
+            <input class="mode-button" type="button" value="Abyss" id="abyss-button" onclick="abyssMode()">
+        </div>
+        <div class="main-content">
+            <h1>
+                <img class="title-img" src="assets/Mother_3_Final_Logo.png" alt="Mother 3">
+            </h1>
+            <div>
+                <div class="blurb-container">
+                    <p class="blurb-text"> No arquipelágo de Nowhere Islands, caos se espalha depois da invasão da Armada Pigmask, uma misteriosa organização de pessoas usando máscaras de porco. Esse grupo gradativamente constroem um estado de sítio, enquanto fazem experimentos na flora e fauna local, além disso eles introduzem novas tecnologias e infraestrutura para as ilhas.</p>
+                    <p class="blurb-text">Em meio a tudo isso, o tímido jovem Lucas vai a procura de seu irmão desaparecido,Claus, junto de seu fiel cachorro Boney, Lucas acaba envolvido em impedir a Armada Pigsmask, junto de Duster e Kumatora</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <p>Em Mother 3, existe uma nova mecanica chamada "tempo", em que se o jogador conseguir apertar o botão de confirmação no mesmo tempo da batida da música de batalha (chamada de "heartbeat"), ele consegue dar mais dano.</p>
+                    <p>Abaixo temos uma simplificação da mecânica que você pode jogar clicando no botão "Start", quando começar a música, clique no botão "Hit" para golpear o inimigo, tente fazer 16 acertos para ganhar</p>
+                    <p>Se você errar o "tempo" da batida você perde todos os seus pontos</p>
+                    <p>Se você não conseguir a quantidade mínima de acertos até a música acabar, o jogo para, você também pode parar a música e também o jogo clicando no botão "Stop"</p>
+                </div>
+                <div>
+                    <audio id="battleMusic" src="assets/Back Beat Battle [Heartbeat] - Mother 3.mp3"></audio>
+                    <audio id="failureSound" src="assets/005 Inaudible failure sound.wav"></audio>
+                    <div style="display: flex; flex-direction: column;align-items: center; justify-content: center;">
+                        <h2 id="winMessage" hidden>VOCÊ GANHOU</h2>
+                        <div style="font-size: 1.4rem; font-weight: bold;">Golpes: <span id="scores">0</span></div>
+                        <div class="battle-background" style=" z-index: 0;">
+                            <div class="target-container" id="target">
+                                <img src="assets/Titanian2.png" alt="">
+                            </div>
+                        </div>
+                        <div style="display: flex;flex-direction: row;">
+                            <div class="game-button"><input id="startBtn" type="button" value="Start" onclick="start()"></div>
+                            <div class="game-button"><input id="hitBtn" type="button" value="Hit" onclick="hit()"></div>
+                            <div class="game-button"><input id="hitBtn" type="button" value="Stop" onclick="stop()"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div name="lucas" class="character-container">
+                    <div><h2 class="flavonids lucas-color">LUCAS</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th><img src="assets/lucas_sprite2.png" alt="Sprite of Lucas"></th>
+                            </tr>
+                            <tr>
+                                <td>Ele é um garoto gentil e honesto</td>
+
+                            </tr>
+                            <tr>
+                                <td>Ele se torna forte, determinado e independente</td>
+                            </tr>
+                            <tr>
+                                <td>Sua comida favorita é omeletes</td>
+                            </tr>
+                            <tr>
+                                <td>Ele também ama seu cachorro, Boney, e leva ele para passear e brincar frequentemente</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+                <hr>
+
+                <div name="boney" class="character-container">
+                    <div><h2 class="flavonids boney-color">BONEY</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th><img src="assets/Boney_sprite2.png" alt="Sprite of Boney"></th>
+                            </tr>
+                            <tr><td>Cachorro da família de Lucas</td></tr>
+                            <tr><td>É um bom garoto</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+
+                <div name="duster" class="character-container">
+                    <div><h2 class="flavonids duster-color">DUSTER</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th><img id="duster_img" src="assets/Duster_sprite2.png" alt="Sprite of Duster"></th>
+                            </tr>
+                            <tr>
+                                <td>Ele é um ladrão amador</td>
+                            </tr>
+                            <tr>
+                                <td>Na sua infância, ele estudou várias técnicas de ladrão do seu pai, Wess.</td>
+                            </tr>
+                            <tr>
+                                <td>Dizem que sua perna torta é porque Wess mandava ele treir muito pesado</td>
+                            </tr>
+                            <tr>
+                                <td>Ele é geralmente noturno, ficando ativo durante a noite e dormindo durante o dia</td>
+                            </tr>
+                        </table>     
+                    </div>
+                </div>
+                <hr>
+
+                <div name="kumatora" class="character-container">
+                    <div><h2 class="flavonids kumatora-color">KUMATORA</h2></div>
+                    <div class="char-info-container">
+                        <table>
+                            <tr>
+                                <th><img src="assets/Kumatora_sprite2.png" alt="Sprite of Kumatora"></th>
+                            </tr>
+                            <tr>
+                                <td>Kumatora ficou orfã muito nova</td>
+                            </tr>
+                            <tr>
+                                <td>Ela foi criada pelas Magypsies, as quais nomeram-na a princesa do Castelo Osohe.</td>
+                            </tr>
+                            <tr>
+                                <td>Apesar de sua natureza teimosa, Kumatora está disposta a fazer sacrifícios para conquistar seus objetivos</td>
+                            </tr>
+                            <tr>
+                                <td>A aparência de Kumatora é mais masculina do que a maioria das garotas</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/modes.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

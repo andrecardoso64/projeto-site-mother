@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Mother Series</title>
+</head>
+<body>
+    <main id="main">
+        <div class="title-container">
+            <h1 class="index-title">
+                <img src="assets/Mother_(1989)_logo2.svg" alt="MOTHER">
+            </h1>
+        </div>
+        <h2 class="white-h2">Você pode começar escolhendo um jogo</h2>
+        <div style="font-size: 20px; display: flex; align-items: center; justify-content: space-around;margin-bottom: 80vh;">
+            <div class="img-container"><a class="img-link" href="mother1.html"><img class="img-cover" src="assets/MOTHER_1989_Boxart.png" alt="Mother (NES)"></a></div>
+            <div class="img-container"><a class="img-link" href="mother2.html"><img class="img-cover" src="assets/Mother_2_Boxart.png" alt="Mother 2 (SNES)"></a></div>
+            <div class="img-container"><a class="img-link" href="mother3.html"><img class="img-cover" src="assets/mother3_box.jpg" alt="Mother 3 (GBA)"></a></div>
+        </div>
+    </main>
+    <div id="copyright-text" style="margin-bottom: 120vh;">
+        <h2 class="white-h2">All rights reserved for Nintendo</h2>
+        <h2 class="white-h2">Images got from the <a href="https://wikibound.info/wiki/WikiBound" target="_blank">WikiBound</a> website</h2>
+        <h2 class="white-h2">Please dont sue me</h2>
+    </div>
+
+    <div style="margin-bottom: 230vh;">
+        <h2 class="white-h2">Você pode voltar para cima clicando <a href="#main" target="_top">aqui</a></h2>
+        <h2 class="white-h2">Sabe, se você quiser...</h2>
+    </div>
+
+    <div style="display: flex;flex-direction: column;align-items: center;">
+        <div id="dialog-box">Gostaria de tomar um chá?</div>
+        <div style="display: flex;justify-content: center;">
+            <table>
+                <tr>
+                    <td><a style="text-decoration: none;color: black;" href="references.html"><img id="teacup" src="assets/teacup2.png" onmouseover="highlight()" onmouseout="dehighlight()" alt="Clique aqui"></a></td>
+                    <td><img id="mr_saturn" src="assets/mr_saturn2.png" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        function highlight(){
+            document.getElementById("teacup").src = "assets/teacup_highlight.png";
+        }
+        function dehighlight(){
+            document.getElementById("teacup").src = "assets/teacup2.png";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+main{
+    padding: 0 5%;
+}
+
+a{
+    color: red;
+}
+
+p{
+    font-size: 16pt;
+}
+
+/*Navigation bar css*/
+nav{
+    padding: 0rem;
+    background-color: rgba(0, 0, 0);
+    border-style: solid;
+    border-color: #fff9f4;
+    border-width: 8px;
+    border-radius: 10px;
+}
+
+.nav-content{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-img{
+    width: auto;
+    height: 6rem;
+}
+
+.option-container{
+    transition: 500ms;
+    border-bottom-style: solid;
+    border-color: black;
+}
+
+.option-container:hover{
+    transition: 800ms;
+    border-color: white;
+}
+
+.link{
+    font-size: 30px;
+}
+
+/*Mode buttons*/
+.mode-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px;
+}
+.mode-button{
+    background-color: white;
+    box-shadow: none;
+    border:none;
+    padding: 0.5rem;
+    margin: 0px 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

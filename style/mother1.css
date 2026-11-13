@@ -1,0 +1,186 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-image: url('../assets/grass2.png');
+    background-repeat: repeat;
+    color: white;
+}
+
+.abyss-mode{
+    background-color: black;
+    background-blend-mode: color-burn;
+}
+
+.night-mode{
+    background-color: rgba(17, 1, 89, 0.696);
+    background-blend-mode: color-burn;
+}
+
+table{
+    margin-right: 20px;
+    width: 16rem;
+}
+
+th{
+    font-size: 20px;
+    text-align: center;
+}
+
+td{
+    vertical-align: bottom;
+}
+
+ul{
+    font-size: 14pt;
+}
+
+li{
+    margin: 10px 0px;
+}
+
+
+h1{
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.main-content{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 50px 0px 50px;
+}
+
+.title-img{
+    width: 19rem;
+    height: auto;
+}
+
+.blurb-container{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 30px;
+}
+
+.blurb-text{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.width-fit{
+    width: fit-content;
+}
+
+.flavonids{
+    font-size: 60px;
+    transform: scaleY(1.5);
+    padding: 10px; text-align: center;
+}
+
+.ninten-color{
+    color: rgb(0, 123, 255);
+}
+
+.ninten-header, .roid-header, .anna-header, .teddy-header{
+    color: white; margin: 0px;
+    padding: 5px;
+}
+
+.header-text{
+    margin: 0px; text-align: center;
+}
+
+.ninten-header{
+    background-color: rgb(0, 123, 255);
+}
+
+.roid-header{
+    background-color: rgb(0, 223, 137);
+}
+
+.roid-color{
+    color: rgb(0, 223, 137);
+}
+
+.anna-header{
+    background-color: rgb(255, 57, 146);
+}
+
+.anna-color{
+    color: rgb(255, 57, 146);
+}
+
+.teddy-header{
+    background-color: rgb(176, 14, 197);
+}
+
+.teddy-color{
+    color: rgb(176, 14, 197);
+}
+
+.character-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.char-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary-container{
+    display: grid;
+}
+
+.character-description{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.description-container{
+    margin: 0rem 2rem;
+}
+
+.sprite-container{
+    border-color: #fff9f4;
+    /*background-color: #fff9f4;*/
+    width: fit-content;
+    height: fit-content;
+    border-style: solid;
+    border-width: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.container-pain{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.thing-section{
+    /*background-color: rgb(211, 211, 211); margin: 0px;*/
+    background-color: black;
+    border-style: solid;
+    border-color: #fff9f4;
+    padding: 15px; display: flex;
+}
+
+.thing-description{
+    background-color: #fff9f4;
+    padding: 1px 30px;
+    color: black;
+    margin: 1em 2em;
+    max-width: 20rem;
+}
+
+.thing-text{
+    text-align: justify;
+}
