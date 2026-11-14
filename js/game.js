@@ -1,6 +1,6 @@
 const startBtn = document.getElementById("startBtn");
         const hitBtn = document.getElementById("hitBtn");
-        const musicTempo = 20;
+        const musicTempo = 104;
         const audio = document.getElementById("battleMusic");
         const failureSound = document.getElementById("failureSound");
         const target = document.getElementById("target");
@@ -20,7 +20,6 @@ const startBtn = document.getElementById("startBtn");
             }
             startBtn.hidden = true;
             audio.play();
-            console.log(hidding);
             const response = await tempo(104);
             if (response && !hasStop){
                 repeat = true;
@@ -47,8 +46,6 @@ const startBtn = document.getElementById("startBtn");
             if(!hidding){
                 hidding = true;
             }
-            console.log(hidding);
-            console.log("Dont");
 
         }
 
@@ -56,8 +53,6 @@ const startBtn = document.getElementById("startBtn");
             if(hidding){
                 hidding = false;
             }
-            console.log(hidding);
-            console.log("Hit");
         }
 
         function setTimer(time){
@@ -70,7 +65,6 @@ const startBtn = document.getElementById("startBtn");
 
         async function tempo(bpm) {
             let time = parseInt((60/bpm)*1000);
-            console.log("Seconds per Beat:"+time);
             showTarget();
             await setTimer(18); //Interval for hitting a note
             hideTarget();
@@ -89,7 +83,6 @@ const startBtn = document.getElementById("startBtn");
                 if(audio.ended){
                     stop();
                 }
-                console.log("Pattern repeated");
                 await tempo(musicTempo);
             }
        }

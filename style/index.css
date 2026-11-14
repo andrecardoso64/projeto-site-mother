@@ -57,6 +57,14 @@ a{
     width: auto;
 }
 
+.games-container{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80vh;
+}
+
 .img-cover:hover{
     transition: 850ms;
     transform:translateY(-40px);
