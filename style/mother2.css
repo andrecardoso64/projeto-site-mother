@@ -92,33 +92,20 @@ h3{
     padding: 10px; text-align: center;
 }
 
-.ninten-color{
+.ness-color{
     color: rgb(0, 123, 255);
 }
 
-.ninten-header, .roid-header, .anna-header, .teddy-header{
-    color: white; margin: 0px;
-    padding: 5px;
+.jeff-color{
+    color: rgb(0, 223, 137);
 }
 
-.header-text{
-    margin: 0px; text-align: center;
+.paula-color{
+    color: rgb(255, 57, 146);
 }
 
-.ninten-header{
-    background-color: rgb(0, 123, 255);
-}
-
-.roid-header{
-    background-color: rgb(0, 223, 137);
-}
-
-.anna-header{
-    background-color: rgb(255, 57, 146);
-}
-
-.teddy-header{
-    background-color: rgb(176, 14, 197);
+.poo-color{
+    color: white;
 }
 
 .character-container{
@@ -165,7 +152,6 @@ h3{
 }
 
 .thing-section{
-    /*background-color: rgb(211, 211, 211); margin: 0px;*/
     border-style: solid;
     border-color: #fff9f4;
     padding: 15px; display: flex;
